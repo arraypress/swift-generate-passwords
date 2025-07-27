@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftGeneratePasswords",
+    name: "swift-generate-passwords",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15),
@@ -13,14 +13,14 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftGeneratePasswords",
-            targets: ["SwiftGeneratePasswords"]),
+            name: "PasswordGenerator",
+            targets: ["PasswordGenerator"]),
     ],
     targets: [
         .target(
-            name: "SwiftGeneratePasswords"),
+            name: "PasswordGenerator"),
         .testTarget(
-            name: "SwiftGeneratePasswordsTests",
-            dependencies: ["SwiftGeneratePasswords"]),
+            name: "PasswordGeneratorTests",
+            dependencies: ["PasswordGenerator"]),
     ]
 )

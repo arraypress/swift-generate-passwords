@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SwiftGeneratePasswords
+@testable import PasswordGenerator
 
 final class PasswordGeneratorTests: XCTestCase {
     

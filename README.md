@@ -1,4 +1,4 @@
-# SwiftGeneratePasswords
+# Swift Password Generator
 
 A modern Swift package for generating cryptographically secure passwords with extensive customization options. Perfect for apps that need strong password generation, security applications, or any system requiring secure random text.
 
@@ -18,18 +18,18 @@ A modern Swift package for generating cryptographically secure passwords with ex
 
 ### Swift Package Manager
 
-Add SwiftGeneratePasswords to your project using Xcode or by adding it to your `Package.swift`:
+Add PasswordGenerator to your project using Xcode or by adding it to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/arraypress/swift-generate-passwords.git", from: "1.0.0")
+    .package(url: "https://github.com/arraypress/swift-password-generator.git", from: "1.0.0")
 ]
 ```
 
 ## Quick Start
 
 ```swift
-import SwiftGeneratePasswords
+import PasswordGenerator
 
 // Generate a default 16-character password
 let password = PasswordGenerator.generate()
