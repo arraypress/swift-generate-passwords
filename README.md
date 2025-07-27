@@ -1,6 +1,9 @@
 # Swift Password Generator
 
 A modern Swift package for generating cryptographically secure passwords with extensive customization options. Perfect for apps that need strong password generation, security applications, or any system requiring secure random text.
+                            
+[![Swift 5.9+](https://img.shields.io/badge/Swift-5.9+-blue.svg)](https://swift.org)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS%2013%20|%20macOS%2010.15%20|%20tvOS%2013%20|%20watchOS%206-lightgrey.svg)](https://swift.org)
 
 ## Features
 

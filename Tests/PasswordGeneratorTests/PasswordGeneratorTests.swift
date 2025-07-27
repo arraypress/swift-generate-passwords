@@ -95,7 +95,7 @@ final class PasswordGeneratorTests: XCTestCase {
         
         XCTAssertEqual(uniquePasswords.count, 50, "All 50 passwords should be unique")
     }
-
+    
     // MARK: - Basic Generation Tests
     
     func testDefaultGeneration() {
@@ -114,7 +114,7 @@ final class PasswordGeneratorTests: XCTestCase {
         for _ in 0..<50 { // Try multiple times to find a password with all types
             let testPassword = PasswordGenerator.generate()
             if testPassword.hasUppercase && testPassword.hasLowercase &&
-               testPassword.hasNumbers && testPassword.hasSymbols {
+                testPassword.hasNumbers && testPassword.hasSymbols {
                 hasFoundAllTypes = true
                 break
             }
@@ -224,7 +224,7 @@ final class PasswordGeneratorTests: XCTestCase {
         XCTAssertEqual(password.count, 12, "Should still generate correct length")
         // Should fallback to alphanumeric
         XCTAssertTrue(password.hasUppercase || password.hasLowercase || password.hasNumbers,
-                     "Should contain alphanumeric characters as fallback")
+                      "Should contain alphanumeric characters as fallback")
     }
     
     // MARK: - Custom Character Set Tests
@@ -255,7 +255,7 @@ final class PasswordGeneratorTests: XCTestCase {
         
         XCTAssertEqual(password.count, 10, "Should still generate password with fallback")
         XCTAssertTrue(password.hasUppercase || password.hasLowercase || password.hasNumbers || password.hasSymbols,
-                     "Should contain some character types from fallback")
+                      "Should contain some character types from fallback")
     }
     
     // MARK: - Pronounceable Password Tests

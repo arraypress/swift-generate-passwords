@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-generate-passwords",
+    name: "PasswordGenerator",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15),
